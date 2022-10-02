@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Result"
+    tools:layout_editor_absoluteY="56dp"
+    android:background="#ffffff"
+    tools:showIn="@layout/activity_result">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <VideoView
+            android:id="@+id/healthanimation"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="500dp"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Disease Name"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:background="@drawable/back"
+         />
+
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="300dp"
+            android:orientation="horizontal"
+
+
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageplay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="97dp"
+                android:src="@drawable/play" />
+
+            <ImageView
+                android:id="@+id/imagepause"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="20dp"
+
+                android:src="@drawable/pause" />
+
+            <ImageView
+                android:id="@+id/imagestop"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/stop" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
